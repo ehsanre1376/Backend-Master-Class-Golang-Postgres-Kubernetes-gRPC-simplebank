@@ -530,7 +530,7 @@ message Tag {
   // changing tag object's name would break the link to the references to the
   // tag in individual operation specifications.
   //
-  // TODO(): #4 Add 'name' property. Use it to allow override of the name of
+  // TODO(1): #4 Add 'name' property. Use it to allow override of the name of
   // global Tag object, then use that name to reference the tag throughout the
   // OpenAPI file.
   reserved 1;
