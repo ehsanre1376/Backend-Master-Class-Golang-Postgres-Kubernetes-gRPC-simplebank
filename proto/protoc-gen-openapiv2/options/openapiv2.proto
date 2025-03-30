@@ -454,7 +454,7 @@ message JSONSchema {
   // field 18 is reserved for 'additionalItems', omitted from OpenAPI v2.
   reserved 18;
   // field 19 is reserved for 'items', but in OpenAPI-specific way.
-  // TODO(ivucica): add 'items'?
+  // TODO(ivucica): #135 add 'items'?
   reserved 19;
   uint64 max_items = 20;
   uint64 min_items = 21;
@@ -470,7 +470,7 @@ message JSONSchema {
   // field 28 is reserved for 'definitions', omitted from OpenAPI v2.
   reserved 28;
   // field 29 is reserved for 'properties', but in OpenAPI-specific way.
-  // TODO(ivucica): add 'additionalProperties'?
+  // TODO(ivucica): #2 add 'additionalProperties'?
   reserved 29;
   // following fields are reserved, as the properties have been omitted from
   // OpenAPI v2:
@@ -497,7 +497,7 @@ message JSONSchema {
   // OpenAPI v2: contentMediaType, contentEncoding, if, then, else
   reserved 37 to 41;
   // field 42 is reserved for 'allOf', but in OpenAPI-specific way.
-  // TODO(ivucica): add 'allOf'?
+  // TODO #3(ehsanre1376/Backend-Master-Class-Golang-Postgres-Kubernetes-gRPC-simplebankehsanre1376/Backend-Master-Class-Golang-Postgres-Kubernetes-gRPC-simplebankehsanre1376/Backend-Master-Class-Golang-Postgres-Kubernetes-gRPC-simplebankehsanre1376/Backend-Master-Class-Golang-Postgres-Kubernetes-gRPC-simplebank#222): add 'allOf'?
   reserved 42;
   // following fields are reserved, as the properties have been omitted from
   // OpenAPI v2:
@@ -530,7 +530,7 @@ message Tag {
   // changing tag object's name would break the link to the references to the
   // tag in individual operation specifications.
   //
-  // TODO(ivucica): Add 'name' property. Use it to allow override of the name of
+  // TODO(1): #4 Add 'name' property. Use it to allow override of the name of
   // global Tag object, then use that name to reference the tag throughout the
   // OpenAPI file.
   reserved 1;
