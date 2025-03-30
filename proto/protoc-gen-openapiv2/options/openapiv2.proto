@@ -454,7 +454,7 @@ message JSONSchema {
   // field 18 is reserved for 'additionalItems', omitted from OpenAPI v2.
   reserved 18;
   // field 19 is reserved for 'items', but in OpenAPI-specific way.
-  // TODO(ivucica): add 'items'?
+  // TODO(ivucica): #135 add 'items'?
   reserved 19;
   uint64 max_items = 20;
   uint64 min_items = 21;
